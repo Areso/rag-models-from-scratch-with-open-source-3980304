@@ -11,10 +11,6 @@
       }
     }
   },
-  "containerEnv": {
-    "HF_USERNAME": "${HF_USERNAME}",
-    "HF_TOKEN": "${HF_TOKEN}"
-  },
   "postCreateCommand": "echo 'DEBUG: HF_USERNAME=' $HF_USERNAME && echo 'DEBUG: HF_TOKEN is set' && bash /usr/local/bin/download-model.sh",
   "remoteUser": "vscode",
   "forwardPorts": [5432],
